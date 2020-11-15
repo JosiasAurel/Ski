@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ski - Home</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="{% static 'home/style.css'%}">
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <img src="{% static 'home/menu.jpg'%}" alt="menu button" class="m" />
+      <ul class="menu-content">
+        <li><a href="#">Home</a></li>
+         <li><a href="#">Register</a></li>
+       <li><a href="#">Login</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="intro">
+    <h2>Ski 🎿</h2>
+    <div class="start-c"><a href="#"><button>Join</button></a></div>
+    <div class="slogan-c">
+      <h3 class="slogan">Easily create and share bit sized code snippets with short explanations</h3>
+    </div>
+  </div>
+  
+  <div class="features flex">
+    <div class="feature card">
+      <div class="f-img-c"><img src="{% static 'home/md.jpg'%}" alt="md" /></div>
+      <p>Write in markdown</p>
+    </div>
+    <div class="feature card">
+      <div class="f-img-c"><img src="{% static 'home/share.jpg'%}" alt="share" /></div>
+      <p>Share to social media</p>
+    </div>
+    <div class="feature card">
+
+      <div class="f-img-c"><img src="{% static 'home/brain.jpg'%}" alt="brain" /></div>
+      <p>Share knowledge</p>
+    </div>
+  </div>
+  <script src="{% static 'home/main.js'%}"></script>
+</body>
+</html>

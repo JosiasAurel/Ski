@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Skis</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="{% static 'skis/style.css' %}">
+</head>
+
+<body>
+  <div class="title">
+    <h2>View the Latest Skis</h2>
+  </div>
+
+  {% for ski in skis %}
+  <div class="ski-container">
+    <div class="ski">
+      <h2 class="ski-title">{{ ski.title }}</h2>
+      <span class="ski-info">
+        <p></p>
+        <p>Created on {{ ski.created_on }}</p>
+      </span>
+    </div>
+
+    {% endfor %}
+  </div>
+ 
+</body>
+</html>
