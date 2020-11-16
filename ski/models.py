@@ -12,5 +12,5 @@ class Snippet(models.Model):
     def __str__(self):
         return self.title
 
-    """ def __repr__(self):
-        return f"<Snippet {self.title} at {self.created_on}>" """
+    def __repr__(self):
+        return f"<Snippet {self.title} at {self.created_on}>"
