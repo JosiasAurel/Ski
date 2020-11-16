@@ -123,4 +123,4 @@ STATIC_URL = '/static/'
 # my custom settings
 LOGIN_REDIRECT_URL = "skis"
 LOGOUT_REDIRECT_URL = "skis"
-
+STATIC_ROOT = 'static'
