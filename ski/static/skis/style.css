@@ -1,7 +1,28 @@
 body {
-    font-size: 15pt;
-    font-family: monospace ;
-    background-color: #e6fcff;
+  font-size: 15pt;
+  font-family: monospace;
+  background-color: #e6fcff;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-content {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #2bf8c4;
 }
 
 .ski-container {
@@ -21,13 +42,13 @@ body {
 
 .ski:hover {
   animation-name: ski-hover;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
 
 @keyframes ski-hover {
   to {
-    box-shadow: 2px 2px 2px 2px #120236 ;
+    box-shadow: 2px 2px 2px 2px #120236;
   }
 }
 
@@ -38,7 +59,8 @@ body {
   justify-content: space-evenly;
 }
 
-.h2, p {
+.h2,
+p {
   margin: 5px;
 }
 
