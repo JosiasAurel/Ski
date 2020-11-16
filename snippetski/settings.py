@@ -123,4 +123,4 @@ STATIC_URL = '/static/'
 # my custom settings
 LOGIN_REDIRECT_URL = "skis"
 LOGOUT_REDIRECT_URL = "skis"
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = "/var/www/example.com/static/"
