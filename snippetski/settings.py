@@ -123,6 +123,21 @@ STATIC_URL = '/static/'
 # my custom settings
 LOGIN_REDIRECT_URL = "skis"
 LOGOUT_REDIRECT_URL = "skis"
+STATIC_ROOT = 'staticfiles'
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    (os.path.join(BASE_DIR,'smcore','static')),
+)
+
+
+STATICFILES_FINDERS = (
+
+    #'django.contrib.staticfiles.finders.FileSystemFinder',
+    #'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    #'django.contrib.staticfiles.finders.DefaultStorageFinder',
+)
 # Configure Django App for Heroku.
 import django_heroku
 django_heroku.settings(locals())
