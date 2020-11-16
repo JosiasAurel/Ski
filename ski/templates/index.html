@@ -17,10 +17,19 @@
 
 <body>
   <header class="menu-content">
-        <a href="/">Home</a>
-         <a href="#">Register</a>
-       <a href="/accounts/login">Login</a>
-        <a href="/about">About</a>
+    {% if user.is_authenticated %}
+    <a href="/">Home</a>
+           <a href="/skis">Skis</a>
+         <a href="/accounts/logout">Logout</a>
+          <a href="/about">About</a>
+    {% else %}
+    <a href="/">Home</a>
+           <a href="/register">Register</a>
+         <a href="/accounts/login">Login</a>
+          <a href="/about">About</a>
+    {% endif %}
+  
+    <h3>Hello {{ user.username|default:"Guest" }}</h3>
   </header>
   <div class="intro">
     <h2>Ski 🎿</h2>
