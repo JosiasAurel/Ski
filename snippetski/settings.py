@@ -123,4 +123,7 @@ STATIC_URL = '/static/'
 # my custom settings
 LOGIN_REDIRECT_URL = "skis"
 LOGOUT_REDIRECT_URL = "skis"
-STATIC_ROOT = "/var/www/example.com/static/"
+# Configure Django App for Heroku.
+import django_heroku
+django_heroku.settings(locals())
+
