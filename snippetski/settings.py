@@ -121,4 +121,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # my custom settings
-LOGIN_REDIRECT_URL = "skis/"
+LOGIN_REDIRECT_URL = "skis"
+LOGOUT_REDIRECT_URL = "skis"

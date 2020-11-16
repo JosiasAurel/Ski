@@ -15,10 +15,17 @@
   <link rel="stylesheet" href="{% static 'skis/style.css' %}">
 </head>
 <header class="menu-content">
+  {% if user.is_authenticated %}
   <a href="/">Home</a>
-   <a href="#">Register</a>
- <a href="#">Login</a>
-  <a href="/about">About</a>
+         <a href="/skis">Skis</a>
+       <a href="/accounts/logout">Logout</a>
+        <a href="/about">About</a>
+  {% else %}
+  <a href="/">Home</a>
+         <a href="/skis">Register</a>
+       <a href="/accounts/login">Login</a>
+        <a href="/about">About</a>
+  {% endif %}
 
   <h3>Hello {{ user.username|default:"Guest" }}</h3>
 </header>
