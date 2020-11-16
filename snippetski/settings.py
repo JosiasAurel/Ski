@@ -125,4 +125,4 @@ LOGIN_REDIRECT_URL = "skis"
 LOGOUT_REDIRECT_URL = "skis"
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = 'static'
