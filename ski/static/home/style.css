@@ -1,7 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-size: 15pt;
-    font-family: monospace ;
-    background-color: #e6fcff;
+  font-size: 15pt;
+  font-family: monospace;
+  background-color: #e6fcff;
 }
 
 .intro > h2 {
@@ -13,28 +17,11 @@ header {
   justify-content: flex-start;
 }
 
-.menu {
-  position: relative;
-  display: inline-block;
-}
-
-.m {
-  max-width: 40px;
-}
-
-.menu:hover > .menu-content {
-  position: absolute;
-  display: block;
-  height: 100px;
-}
-
 .menu-content {
   list-style-type: none;
-  position: absolute;
-  display: none;
-  height: 0px;
-  overflow: hidden;
-  transition: height 2s;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 a {
@@ -64,7 +51,7 @@ a:hover {
   border-color: transparent;
   border-radius: 5px;
   background-color: white;
-  margin: 5px;
+  margin: 25%;
 }
 
 .features {
@@ -103,4 +90,11 @@ button {
 
 button:focus {
   outline: none;
+}
+
+@media screen and (max-width: 480px) {
+  .flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
