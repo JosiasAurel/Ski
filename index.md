@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+# snippet-ski
 
-You can use the [editor on GitHub](https://github.com/JosiasAurel/Ski/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+A snippet code snippet sharing platform
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This have to be finnished by the end of next week and hosted on heroku for others to use
+You may maintain it overtime
 
-### Markdown
+## Technologies Used
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Python
+- JavaScript
+- SQLite3
 
-```markdown
-Syntax highlighted code block
+Make it functional, smooth and cool
 
-# Header 1
-## Header 2
-### Header 3
+### Features
 
-- Bulleted
-- List
+- write in markdown
+- No images
+- Syntax Highlighting for languages
+- OG (Open Graph)
+- Social Media sharing
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JosiasAurel/Ski/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Maybe more to come
