@@ -23,6 +23,11 @@ const resolvers = {
 
 const server = new ApolloServer({typeDefs, resolvers})
 
-server.listen().then(({url}) => {
-    console.log(`[Running] ${url}`)
-})
+
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+}
+
+export default server.createHandler({ path: '/api' })
