@@ -1,9 +1,11 @@
 import React, {FunctionComponent} from "react"
 
-const Index:FunctionComponent = () => {
+const Index = () => {
     return (
         <>
         <h1>Hello World</h1>
         </>
     )
 }
+
+export default Index

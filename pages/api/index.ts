@@ -1,4 +1,4 @@
-import {ApolloServer, gql} from "apollo-server"
+import {ApolloServer, gql} from "apollo-server-micro"
 
 const typeDefs = gql`
     type User {
